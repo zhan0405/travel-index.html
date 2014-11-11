@@ -1,0 +1,159 @@
+
+/*******************************************
+				Defaults
+
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+	padding:0;
+	margin: 0;
+}
+
+
+html,body{
+	background-image:url(../img/img.jpg);
+    background-size:cover;
+}
+
+h1{
+   text-align:center;
+   color:#FF9471;
+   font-size:100px;
+
+}
+h2{
+   text-align:center;
+   color:#FF5A42;
+   font-size:80px;
+}
+p{
+   text-align:center;
+   font-size:50px;
+   color:white;
+}
+.insideFormBox{
+	color:white;
+	}
+
+/*******************************************
+				Layout
+*******************************************/
+@media (min-width:780px){
+
+.main{
+		margin:0 auto;
+		width:800px;
+}
+.foot{
+	clear:both;
+	
+}
+.formBox{
+	  display:block;
+	  
+	   float:left;
+	   width:25%;
+}
+
+	
+	
+.col{
+	float:left;
+	 margin: 0 0 0 350px ;
+	   width:55%;
+	
+	}
+}
+@media (min-width:500px) and (max-width:779px){
+	
+.main{
+	margin:0 auto;
+	width:400px;
+	display:block;
+}
+.foot{
+	clear:both;
+	
+}
+
+.formBox{
+	  	clear:both;
+	   float:left;
+	   width:50%;
+	  
+	
+}
+.col{
+	
+	width:30%;
+	margin:0 0 0 250px;
+	
+	
+	}
+	
+	}
+	
+	@media (max-width:499px){
+
+.main{
+		margin:0 auto;
+		
+}
+h1{
+	margin:0 0 0 15%;
+	
+	}
+.foot{
+	clear:both;
+	
+}
+.formBox{
+	clear:right;
+	  display:inline-block;
+	 
+	   float:left;
+	   width:100%;
+}
+.col{
+	
+	   float:left;
+	   width:80%;
+	  
+	}
+.insideFormBox{
+		float:left;
+		width:100%;
+	}
+}
+/*******************************************
+				Form Styles
+*******************************************/
+
+.formBox{
+	  	
+}
+
+.buttons{
+	
+}
+label{
+	 
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+	
+	font-size:20px;
+	
+}
+input[type=submit],
+input[type=reset]{
+	
+}
+
+
+/*******************************************
+				Image Styles
+*******************************************/
+

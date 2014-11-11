@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Travel Form</title>
+	<link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="masthead">
+			<h1>Hotel City</h1>
+		</header>
+		<section class="main">
+			<h2>MORE TRAVEL MORE SAVING!!!</h2>
+			<p>Save up to 75%</p>
+			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+				
+				<div class="formBox">
+                
+                	<div class="insideFormBox">
+					<label for="departure"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z" />
+</svg>Departure city</label>
+					</div>
+                    
+                    <div class="insideFormBox">
+					<input type="text"  name="departure" id="departure" placeholder="departure city" />
+                    </div>
+                    
+				</div>
+                
+				<div class="formBox">
+                <div class="insideFormBox">
+					<label for="destination"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z" />
+</svg>Destination city </label>
+</div>
+<div class="insideFormBox">
+					<input type="text" name="destination" id="destination" placeholder="destination city" /></div>
+				</div>
+				
+				<div class="formBox">
+                <div class="insideFormBox">
+                
+					<label for="departure_dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M0 0v8h1v-8h-1zm2 0v4h2v1h4l-2-1.97 2-2.03h-3v-1h-3z" />
+</svg>Date of departure </label>
+</div>
+<div class="insideFormBox">
+					<input type="date" name="departure_dt" id="departure_dt" placeholder="" />
+				</div>
+                </div>
+				<div class="formBox">
+              <div class="insideFormBox">
+					<label for="return_dt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M0 0v8h1v-8h-1zm2 0v4h2v1h4l-2-1.97 2-2.03h-3v-1h-3z" />
+</svg>Date of return</label>
+</div>
+<div class="insideFormBox">
+					<input type="date" name="return_dt" id="return_dt" placeholder="" />
+				</div>
+                </div>
+				
+				<div class="col">
+                <div class="insideFormBox">
+					<label for="num_adults"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M4 0c-1.1 0-2 1.12-2 2.5s.9 2.5 2 2.5 2-1.12 2-2.5-.9-2.5-2-2.5zm-2.09 5c-1.06.05-1.91.92-1.91 2v1h8v-1c0-1.08-.84-1.95-1.91-2-.54.61-1.28 1-2.09 1-.81 0-1.55-.39-2.09-1z" />
+</svg>Num of Adults</label>
+</div>
+<div class="insideFormBox">
+					<input type="number" name="num_adults" id="num_adults" min="1" max="1000" step="1" />
+					<!-- OR 
+					<select name="num_adults" id="num_adults">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					-->
+				</div>
+                </div>
+				<div class="col">
+                <div class="insideFormBox">
+					<label for="price" title="Max. price per person"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+  <path d="M2 0v1h-.75c-.68 0-1.25.57-1.25 1.25v.5c0 .68.44 1.24 1.09 1.41l2.56.66c.14.04.34.29.34.44v.5c0 .14-.11.25-.25.25h-2.5c-.12 0-.21-.04-.25-.06v-.94h-1v1c0 .34.2.63.44.78.23.16.52.22.81.22h.75v1h1v-1h.75c.69 0 1.25-.56 1.25-1.25v-.5c0-.68-.44-1.24-1.09-1.41l-2.56-.66c-.14-.04-.34-.29-.34-.44v-.5c0-.14.11-.25.25-.25h2.5c.11 0 .21.04.25.06v.94h1v-1c0-.34-.2-.63-.44-.78-.23-.16-.52-.22-.81-.22h-.75v-1h-1z"
+  transform="translate(1)" />
+</svg>Max. Price</label>
+</div>
+<div class="insideFormBox">
+                    <input type="number" name="price" id="price" min="100" max="1000" step="50" />
+					<!--<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>-->
+				</div>
+                </div>
+				
+				<div class="col buttons">
+					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+				</div>
+			</form>
+		</section>
+		<footer class="foot">
+			<p>&copy; 2014 Chicken Stuff Inc.</p>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
